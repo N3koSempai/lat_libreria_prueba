@@ -1,0 +1,32 @@
+/*
+Como se puede ver,
+un módulo no es más que un archivo en el cual este
+será importado en otro archivo para ser usado.
+*/
+
+hola = "Hola mundo, Latino"
+
+persona = {
+  "nombre"   : "Melvin",
+  "apellido" : "Guerrero",
+  "edad"     : 50,
+  "completo" : funcion()
+      retornar persona.nombre.." "..persona.apellido
+   fin
+}
+
+funcion suma(m,n)
+  retornar m + n
+fin
+
+/*
+**Importante**
+Se deben de regresar las funciones y variables
+que se quieran exponer del modulo.
+*/
+retornar {
+  "hola"             : hola,
+  "persona"          : persona,
+  "persona_completo" : persona.completo(),
+  "suma"             : suma
+}
